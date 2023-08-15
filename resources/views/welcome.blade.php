@@ -34,7 +34,14 @@
 
 <body class="container mx-auto mt-10 mb-10 max-w-lg">
     @livewireScripts
-    <livewire:create-poll />
+    <fieldset class="border p-2">
+        <legend class="text-left text-2xl font-medium text-slate-700">Create A Poll</legend>
+        <livewire:create-poll />
+    </fieldset>
+    <fieldset class="border p-2">
+        <legend class="text-left text-2xl font-medium text-slate-700">Avaliable Polls</legend>
+        <livewire:polls />
+    </fieldset>
     {{-- @livewire('create-poll') --}}
 </body>
 

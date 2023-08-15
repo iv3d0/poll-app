@@ -56,5 +56,7 @@ class CreatePoll extends Component
 
         // Reset Inputs
         $this->reset(['title', 'options']);
+        // Emit Event
+        $this->dispatch('poll-created');
     }
 }
